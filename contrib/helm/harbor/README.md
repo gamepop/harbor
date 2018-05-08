@@ -31,6 +31,10 @@ First install [Helm CLI](https://github.com/kubernetes/helm#install), then initi
 ```bash
 helm init
 ```
+If service account is not setup, initialize Helm using default.
+```bash
+helm init --service-account default
+```
 Download Harbor helm chart code.
 ```bash
 git clone https://github.com/vmware/harbor
